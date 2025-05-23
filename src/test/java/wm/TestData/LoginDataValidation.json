@@ -1,0 +1,14 @@
+[
+    {
+        "email": "Nikhil10",
+        "password": "Bcil@12345678",
+        "message": "Login Successfully",
+		"type":"Positive"
+    },
+    {
+        "email": "nikhil.kharb@ymail.com",
+        "password": "Test@1234",
+        "message": "Incorrect email or password."
+		,"type":"Negative"
+    }
+]
