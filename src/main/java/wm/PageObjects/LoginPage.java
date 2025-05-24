@@ -36,14 +36,14 @@ public class LoginPage extends AbstractClass {
 		userEmail.sendKeys(email);
 		userPassword.sendKeys(pass);
 		loginButton.click();
-		System.out.println(driver.getCurrentUrl());
+		System.out.println("Login Done");
 		HomePage homePage = new HomePage(driver);
 		return homePage;
 	}
 	public String getMessage() {
 		waitElementVisibility(popUp);
 		String fmessage = errorMessage.getText();
-		System.out.println(driver.getCurrentUrl());
+		System.out.println("Message Printed");
 		// waitElementInvisibility(CopyRights);
 		return fmessage;
 	}

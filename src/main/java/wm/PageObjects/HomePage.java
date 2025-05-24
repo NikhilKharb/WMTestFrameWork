@@ -38,9 +38,11 @@ public class HomePage extends AbstractClass {
 	WebElement logOutBtn;
 
 	public void logOut() {
+		System.out.println(driver.getCurrentUrl());
 		userIcon.click();
 		waitElementVisibility(userDetails);
 		logOutBtn.click();
+		System.out.println("Logout Done");
 	}
 
 	public String getLoginMessage() {

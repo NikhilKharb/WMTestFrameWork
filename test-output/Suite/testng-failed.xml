@@ -9,7 +9,7 @@
       <class name="wm.TestCases.LoginDDT">
         <methods>
           <include name="launchApplication"/>
-          <include name="logintest_002_valid_email_invalid_pass" invocation-numbers="1 2 3"/>
+          <include name="logintest_002_valid_email_invalid_pass" invocation-numbers="2"/>
           <include name="closeBrowser"/>
         </methods>
       </class> <!-- wm.TestCases.LoginDDT -->
