@@ -31,8 +31,10 @@ public class LoginPage extends AbstractClass {
 	WebElement errorMessage;
 	
 	By popUp = By.xpath("//div[@role='dialog']");
+	By loginFields = By.cssSelector(".bottomlog.ng-tns-c2142377045-0");
 
 	public HomePage login(String email,String pass) {
+		waitElementVisibility(loginFields);
 		userEmail.sendKeys(email);
 		userPassword.sendKeys(pass);
 		loginButton.click();

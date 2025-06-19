@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/0/1</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/1</td>
 </tr><tr>
-<td>Started on:</td><td>Fri May 23 18:37:21 IST 2025</td>
+<td>Started on:</td><td>Tue May 27 11:46:34 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>9 seconds (9005 ms)</td>
+<tr><td>Total time:</td><td>30 seconds (30852 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,15 +76,10 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='wm.TestCases.LoginDDT.logintest_002_valid_email_invalid_pass()'><b>logintest_002_valid_email_invalid_pass</b><br>Test class: wm.TestCases.LoginDDT<br>Parameters: TestCase001- Valid user name and password., Positive, Nikhil10, Bcil@12345678, ©2025-2026 Bar Code India Limited. All rights reserved.</td>
+<td title='wm.TestCases.LoginDDT.gateEntryTest()'><b>gateEntryTest</b><br>Test class: wm.TestCases.LoginDDT<br>Parameters: TestCase001- Gate Entry with the Complete Qty receiving of all the material codes from the selected order., Positive, Nikhil10, Bcil@12345678, PO, 24032502, TNTINV8910, 24-052025, DL8SQQ7313, Driver, 9999999999</td>
 <td></td>
-<td>1</td>
-<td>wm.TestCases.LoginDDT@71e9ddb4</td></tr>
-<tr>
-<td title='wm.TestCases.LoginDDT.logintest_002_valid_email_invalid_pass()'><b>logintest_002_valid_email_invalid_pass</b><br>Test class: wm.TestCases.LoginDDT<br>Parameters: TestCase002-Valid user name and invalid password., Negative, Nikhil10, Bcil@987654321, Invalid username or password!</td>
-<td></td>
-<td>0</td>
-<td>wm.TestCases.LoginDDT@71e9ddb4</td></tr>
+<td>14</td>
+<td>wm.TestCases.LoginDDT@34c01041</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -95,9 +90,18 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='wm.TestCases.LoginDDT.logintest_002_valid_email_invalid_pass()'><b>logintest_002_valid_email_invalid_pass</b><br>Test class: wm.TestCases.LoginDDT<br>Parameters: TestCase002-Valid user name and invalid password., qwer, Nikhil10, Bcil@987654321, Invalid username or password!</td>
-<td><div><pre>org.testng.SkipException: Skipping test due to unknown test type: qwer
-	at wm.TestCases.LoginDDT.logintest_002_valid_email_invalid_pass(LoginDDT.java:35)
+<td title='wm.TestCases.LoginDDT.gateEntryTest()'><b>gateEntryTest</b><br>Test class: wm.TestCases.LoginDDT<br>Parameters: TestCase001- Gate Entry with the Complete Qty receiving of all the material codes from the selected order., Positive, Nikhil10, Bcil@12345678, PO, 24032502, TNTINV8910, 24-052025, DL8SQQ7313, Driver, 9999999999</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: Document_Type-panel (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\kharb\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64232}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64232/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ed26b319102e274740783dbb79325a2d
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at wm.abstractComponents.AbstractClass.waitElementVisibility(AbstractClass.java:27)
+	at wm.PageObjects.GateEntryPage.selectReceivingType(GateEntryPage.java:57)
+	at wm.TestCases.LoginDDT.gateEntryTest(LoginDDT.java:57)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -124,9 +128,18 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace237503491", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace237503491'><pre>org.testng.SkipException: Skipping test due to unknown test type: qwer
-	at wm.TestCases.LoginDDT.logintest_002_valid_email_invalid_pass(LoginDDT.java:35)
+</pre></div><a href='#' onClick='toggleBox("stack-trace196954001", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace196954001'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: Document_Type-panel (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\kharb\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64232}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64232/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ed26b319102e274740783dbb79325a2d
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at wm.abstractComponents.AbstractClass.waitElementVisibility(AbstractClass.java:27)
+	at wm.PageObjects.GateEntryPage.selectReceivingType(GateEntryPage.java:57)
+	at wm.TestCases.LoginDDT.gateEntryTest(LoginDDT.java:57)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -154,8 +167,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>0</td>
-<td>wm.TestCases.LoginDDT@71e9ddb4</td></tr>
+<td>7</td>
+<td>wm.TestCases.LoginDDT@34c01041</td></tr>
 </table><p>
 </body>
 </html>

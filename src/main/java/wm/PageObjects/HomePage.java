@@ -23,7 +23,7 @@ public class HomePage extends AbstractClass {
 	By copyRights = By.xpath("//div[@class='copyright']");
 	By userDetails = By.xpath("//div[@class='toggletopbar top-menu']");
 	
-	// By loader = By.cssSelector(".ng-animating");
+	
 
 	@FindBy(css = "#toast-container")
 	WebElement message;
@@ -38,7 +38,7 @@ public class HomePage extends AbstractClass {
 	WebElement logOutBtn;
 
 	public void logOut() {
-		System.out.println(driver.getCurrentUrl());
+		System.out.println("URL of the current page is"+driver.getCurrentUrl());
 		userIcon.click();
 		waitElementVisibility(userDetails);
 		logOutBtn.click();

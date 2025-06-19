@@ -106,6 +106,7 @@ public class BaseTest {
 	@BeforeMethod(alwaysRun = true)
 	public LoginPage launchApplication() throws IOException {
 		driver = initializeDriver();
+		driver.manage().deleteAllCookies();
 		loginPage = new LoginPage(driver);
 		loginPage.goToLoginPage();
 		return loginPage;
